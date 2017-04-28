@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<pageDefinition xmlns="http://xmlns.oracle.com/adfm/uimodel" version="12.2.1.2.15" id="deptPageDef"
+                Package="mobile.pageDefs">
+  <parameters/>
+  <executables>
+    <variableIterator id="variables"/>
+    <iterator Binds="root" RangeSize="25" DataControl="DeptEmpDC" id="DeptEmpDCIterator"/>
+    <accessorIterator MasterBinding="DeptEmpDCIterator" Binds="allDepartments" RangeSize="25" DataControl="DeptEmpDC"
+                      BeanClass="maf.code.corner.hr.mobile.entities.DepartmentsEntity" id="allDepartmentsIterator"/>
+  </executables>
+  <bindings>
+    <tree IterBinding="allDepartmentsIterator" id="allDepartments">
+      <nodeDefinition DefName="maf.code.corner.hr.mobile.entities.DepartmentsEntity" Name="allDepartments0">
+        <AttrNames>
+          <Item Value="departmentName"/>
+        </AttrNames>
+      </nodeDefinition>
+    </tree>
+  </bindings>
+</pageDefinition>

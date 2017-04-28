@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<adfmf:application xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:adfmf="http://xmlns.oracle.com/adf/mf"
+                   version="1.0" name="HRMAF" id="com.company.HRMAF" appControllerFolder="ApplicationController"
+                   listener-class="application.LifeCycleListenerImpl">
+  <adfmf:featureReference refId="feature1" id="fr1"/>
+</adfmf:application>
